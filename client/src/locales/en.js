@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -112,6 +113,19 @@ export default {
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    submitted: {
+      title: 'Submitted Orders',
+      leadTimeDays: '{days} days',
+      table: {
+        orderNumber: 'Order Number',
+        items: 'Items',
+        total: 'Total',
+        submittedDate: 'Submitted',
+        leadTime: 'Lead Time',
+        expectedDelivery: 'Expected Delivery',
+        status: 'Status'
+      }
+    },
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -127,6 +141,39 @@ export default {
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Select recommended restock items within your budget and place an order',
+    budget: 'Restock Budget',
+    maxBudget: 'Max',
+    selectedItems: 'Selected Items',
+    totalCost: 'Total Cost',
+    remaining: 'Remaining Budget',
+    recommendations: 'Recommendations',
+    table: {
+      sku: 'SKU',
+      name: 'Product',
+      trend: 'Trend',
+      forecast: 'Forecasted Demand',
+      onHand: 'On Hand',
+      restockQty: 'Restock Qty',
+      unitCost: 'Unit Cost',
+      lineCost: 'Line Cost',
+      leadTime: 'Lead Time',
+      selection: 'Budget'
+    },
+    included: 'Included',
+    notInBudget: 'Not in budget',
+    placeOrder: 'Place Order',
+    placing: 'Placing order...',
+    orderPlaced: 'Order {orderNumber} has been submitted.',
+    viewOrders: 'View orders',
+    empty: 'No restock recommendations at this time.',
+    loadError: 'Failed to load restock recommendations',
+    submitError: 'Failed to place restock order'
   },
 
   // Finance/Spending
@@ -204,6 +251,7 @@ export default {
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
+    submitted: 'Submitted',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
